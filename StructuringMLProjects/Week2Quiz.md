@@ -32,8 +32,8 @@ For the output layer, a softmax activation would be a good choice for the output
 
 - 100,000 labeled images taken using the front-facing camera of your car.
 - 900,000 labeled images of roads downloaded from the internet.
-- Each image’s labels precisely indicate the presence of any specific road signs and traffic signals or combinations of them. For example, $$y^{(i)} = \begin{bmatrix} 1 \\ 0 \\ 0 \\ 1 \\ 0 \end{bmatrix}$$ means the image contains a stop sign and a red traffic light.
-Because this is a multi-task learning problem, you need to have all your $$y^{(i)}$$ vectors fully labeled. If one example is equal to $$\begin{bmatrix} 0 \\ ? \\ 1 \\ 1 \\ ? \end{bmatrix}$$ then the learning algorithm will not be able to use that example. True/False?
+- Each image’s labels precisely indicate the presence of any specific road signs and traffic signals or combinations of them. For example, ```y^{(i)} = \begin{bmatrix} 1 \\ 0 \\ 0 \\ 1 \\ 0 \end{bmatrix}``` means the image contains a stop sign and a red traffic light.
+Because this is a multi-task learning problem, you need to have all your ```y^{(i)}``` vectors fully labeled. If one example is equal to ```\begin{bmatrix} 0 \\ ? \\ 1 \\ 1 \\ ? \end{bmatrix}``` then the learning algorithm will not be able to use that example. True/False?
 
 - [ ] True
 - [x] False
